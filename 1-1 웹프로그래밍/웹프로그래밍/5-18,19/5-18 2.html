@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<style type="text/css">
+		
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+		for(var i=0, x=""; i<10; i++){
+		if(i==3) break;
+		x+= "The number is: " + i + "<br>";
+		}
+		document.write(x);
+		
+		document.write("<br>");
+
+		for(i = 0, x= ""; i<10; i++){
+		if(i==3) continue;
+		x+= "The number is: " + i + "<br>";
+		}
+		document.write(x);
+
+		document.write("<br>");
+
+		var A=[1,2,3,5,8,13,21,34,55,89];
+		var counter,Arr = "";
+		for(counter in A){
+			Arr=A[counter] + " ";
+		document.write(Arr);
+		if(counter==4){break;}
+		}
+		document.write("<br>you have exited the loop.");
+
+		document.write("<br>");
+		document.write("<br>");
+
+		var B=[1,2,3,5,8,13,21,34,55,89];
+		for(i=0;i<10;i++){
+			if(i==2||i==3||i==5){
+			continue;
+			}
+			
+			document.write(B[i] +" ");
+		}
+		document.write("<br>");
+		document.write("you have exited the loop.");
+		</script>
+	</body>
+</html>
